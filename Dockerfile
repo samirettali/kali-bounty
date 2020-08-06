@@ -28,7 +28,7 @@ RUN apt-get install --no-install-recommends -y cewl
 RUN apt-get install --no-install-recommends -y nikto sqlmap whatweb
 
 # Subdomain enumeration
-RUN apt-get install --no-install-reccomends -y amass
+RUN apt-get install --no-install-recommends -y amass
 
 # Web enumeration
 RUN pip3 install gsan py-altdns dnsgen
