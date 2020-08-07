@@ -33,6 +33,8 @@ RUN apt-get install --no-install-recommends -y amass
 # Web enumeration
 RUN pip3 install gsan dnsgen
 RUN apt-get install --no-install-recommends -y whois
+
+# Go tools
 RUN go get github.com/ffuf/ffuf \
            github.com/hakluke/hakrawler \
            github.com/lc/gau \
@@ -89,6 +91,12 @@ RUN useradd -m ${USER} && \
     chown -R ${USER}:${USER} /home/${USER}
 
 USER $USER
+
+# Get gf's patterns
+RUN git clone https://github.com/1ndianl33t/Gf-Patterns && \
+        mkdir /home/${USER}/.gf && \
+        mv Gf-Patterns/*.json /home/${USER}/.gf && \
+        rm -rf Gf-Patterns
 
 # Install dotfiles
 RUN curl -Ls http://bit.do/samirminimaldotfiles | bash
