@@ -28,6 +28,7 @@ git clone https://github.com/samirettali/password-cracking-rules
 git clone https://github.com/thelikes/fuzzmost
 git clone https://github.com/assetnote/commonspeak2-wordlists
 git clone https://github.com/Droidzzzio/EnumerationList
+git clone https://github.com/chrislockard/api_wordlist
 wget https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt
 wget https://crackstation.net/files/crackstation-human-only.txt.gz
 
