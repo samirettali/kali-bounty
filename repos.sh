@@ -49,6 +49,7 @@ git clone https://github.com/Ignitetechnologies/Privilege-Escalation
 git clone "https://github.com/masatokinugawa/filterbypass/wiki/Browser's-XSS-Filter-Bypass-Cheat-Sheet"
 
 cd ../tools
+# Cryptography
 git clone https://github.com/Boran/lusas
 git clone https://github.com/Ganapati/RsaCtfTool
 git clone https://github.com/Sjord/jwtcrack
@@ -56,6 +57,7 @@ git clone https://github.com/bwall/HashPump
 git clone https://github.com/frdmn/findmyhash
 git clone https://github.com/psypanda/hashID
 git clone https://github.com/rebootuser/Hashmash
+git clone https://github.com/Ciphey/Ciphey
 
 # Enumeration
 git clone https://github.com/0x646e78/linux-credential-harvester
