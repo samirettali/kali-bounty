@@ -31,7 +31,7 @@ RUN apt-get install --no-install-recommends -y nikto sqlmap whatweb
 RUN apt-get install --no-install-recommends -y amass
 
 # Web enumeration
-RUN pip3 install gsan py-altdns dnsgen
+RUN pip3 install gsan dnsgen
 RUN apt-get install --no-install-recommends -y whois
 RUN go get github.com/ffuf/ffuf \
            github.com/hakluke/hakrawler \
@@ -51,7 +51,14 @@ RUN go get github.com/ffuf/ffuf \
 
 RUN mkdir -p /usr/share/wordlists
 
-# Massdns
+# Install altdns
+RUN https://github.com/infosec-au/altdns && \
+        cd altdns && \
+        python3 setup.py install && \
+        cd .. && \
+        rm -rf altdns
+
+# Install massdns
 RUN git clone https://github.com/blechschmidt/massdns && \
         cd massdns && \
         make && \
@@ -59,6 +66,15 @@ RUN git clone https://github.com/blechschmidt/massdns && \
         cp -r lists /usr/share/wordlists/massdns && \
         cd .. && \
         rm -rf massdns
+
+# Install masscan
+RUN apt-get install -y --no-install-recommends gcc make libpcap-dev && \
+        git clone https://github.com/robertdavidgraham/masscan && \
+        cd masscan && \
+        make && \
+        mv bin/masscan /usr/local/bin && \
+        cd .. && \
+        rm -rf masscan
 
 # Install ngrok
 RUN curl -s https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip | \
