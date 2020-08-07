@@ -52,7 +52,7 @@ RUN go get github.com/ffuf/ffuf \
 RUN mkdir -p /usr/share/wordlists
 
 # Install altdns
-RUN https://github.com/infosec-au/altdns && \
+RUN git clone https://github.com/infosec-au/altdns && \
         cd altdns && \
         python3 setup.py install && \
         cd .. && \
