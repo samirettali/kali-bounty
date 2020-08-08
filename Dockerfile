@@ -53,6 +53,9 @@ RUN go get github.com/ffuf/ffuf \
 
 RUN mkdir -p /usr/share/wordlists
 
+# Install findomain
+RUN wget https://github.com/Edu4rdSHL/findomain/releases/latest/download/findomain-linux -O /usr/local/bin/findomain
+
 # Install altdns
 RUN git clone https://github.com/infosec-au/altdns && \
         cd altdns && \
