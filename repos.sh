@@ -42,6 +42,7 @@ git clone https://github.com/jivoi/pentest
 git clone https://github.com/lanjelot/ctfs
 git clone https://github.com/sehno/Bug-bounty
 git clone https://github.com/trimstray/the-book-of-secret-knowledge
+git clone https://github.com/streaak/keyhacks
 git clone https://github.com/vitalysim/Awesome-Hacking-Resources
 git clone https://github.com/zardus/ctf-tools
 git clone https://github.com/terjanq/Tiny-XSS-Payloads
