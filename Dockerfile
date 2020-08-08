@@ -93,7 +93,8 @@ RUN useradd -m ${USER} && \
 USER $USER
 
 # Get gf's patterns
-RUN git clone https://github.com/1ndianl33t/Gf-Patterns && \
+RUN cd /home/${USER} && \
+        git clone https://github.com/1ndianl33t/Gf-Patterns && \
         mkdir /home/${USER}/.gf && \
         mv Gf-Patterns/*.json /home/${USER}/.gf && \
         rm -rf Gf-Patterns
