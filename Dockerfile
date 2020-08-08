@@ -46,8 +46,10 @@ RUN go get github.com/ffuf/ffuf \
            github.com/projectdiscovery/subfinder/cmd/subfinder \
            github.com/tomnomnom/assetfinder \
            github.com/tomnomnom/gf \
+           github.com/tomnomnom/httprobe \
            github.com/tomnomnom/unfurl \
            github.com/tomnomnom/waybackurls \
+           github.com/tomnomnom/hacks/kxss \
            github.com/tomnomnom/hacks/html-tool && \
     mv /root/go/bin/* /usr/local/bin
 
