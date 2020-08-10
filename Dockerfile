@@ -92,7 +92,7 @@ RUN curl -s https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip | 
 # Install linkfinder dependencies
 RUN git clone https://github.com/GerbenJavado/LinkFinder && \
         cd LinkFinder && \
-        pip3 install -r requirements.txt &&
+        pip3 install -r requirements.txt && \
         cd .. && \
         rm -rf LinkFinder
 
