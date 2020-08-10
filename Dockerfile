@@ -50,6 +50,7 @@ RUN go get github.com/ffuf/ffuf \
            github.com/tomnomnom/unfurl \
            github.com/tomnomnom/waybackurls \
            github.com/tomnomnom/hacks/kxss \
+           github.com/tomnomnom/hacks/tok \
            github.com/tomnomnom/hacks/html-tool && \
     mv /root/go/bin/* /usr/local/bin
 
@@ -95,6 +96,13 @@ RUN git clone https://github.com/GerbenJavado/LinkFinder && \
         pip3 install -r requirements.txt && \
         cd .. && \
         rm -rf LinkFinder
+
+# Install ParamSpider dependencies
+RUN git clone https://github.com/devanshbatham/ParamSpider && \
+        cd ParamSpider && \
+        pip3 install -r requirements.txt && \
+        cd .. && \
+        rm -rf ParamSpider
 
 # User creation
 RUN useradd -m ${USER} && \
