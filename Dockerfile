@@ -56,7 +56,8 @@ RUN go get github.com/ffuf/ffuf \
 RUN mkdir -p /usr/share/wordlists
 
 # Install findomain
-RUN wget https://github.com/Edu4rdSHL/findomain/releases/latest/download/findomain-linux -O /usr/local/bin/findomain
+RUN wget https://github.com/Edu4rdSHL/findomain/releases/latest/download/findomain-linux -O /usr/local/bin/findomain && \
+        chmod +x /usr/local/bin/findomain
 
 # Install altdns
 RUN git clone https://github.com/infosec-au/altdns && \
@@ -87,6 +88,13 @@ RUN apt-get install -y --no-install-recommends gcc make libpcap-dev && \
 RUN curl -s https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip | \
         zcat > /usr/local/bin/ngrok && \
         chmod +x /usr/local/bin/ngrok
+
+# Install linkfinder dependencies
+RUN git clone https://github.com/GerbenJavado/LinkFinder && \
+        cd LinkFinder && \
+        pip3 install -r requirements.txt &&
+        cd .. && \
+        rm -rf LinkFinder
 
 # User creation
 RUN useradd -m ${USER} && \
