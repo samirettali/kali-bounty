@@ -145,11 +145,6 @@ git clone https://github.com/blechschmidt/massdns
 git clone https://github.com/mhaskar/RCEScanner
 git clone https://github.com/codingo/crithit
 git clone https://github.com/ticarpi/jwt_tool
-git clone https://github.com/andreafortuna/MITMInjector
-git clone https://github.com/thelinuxchoice/saycheese
-git clone https://github.com/thelinuxchoice/sayhello
-git clone https://github.com/thelinuxchoice/shellphish
-git clone https://github.com/DarkSecDevelopers/HiddenEye
 git clone https://github.com/AvinashReddy3108/YetAnotherSMSBomber
 
 # Deserialization
@@ -165,7 +160,6 @@ git clone https://github.com/j3ssie/Osmedeus
 git clone https://github.com/lockedbyte/cryptovenom
 git clone https://github.com/mpowa705/Simple-Backdoor
 git clone https://github.com/samirettali/ctf-scripts
-git clone https://github.com/samirettali/web-recon
 git clone https://github.com/trailofbits/onesixtyone
 git clone https://github.com/whid-injector/WHID
 git clone https://github.com/nahamsec/JSParser
@@ -213,6 +207,7 @@ git clone https://github.com/zricethezav/gitleaks
 # Monitoring
 git clone https://github.com/robre/jsmon.git
 git clone https://github.com/ahussam/url-tracker.git
+git clone https://github.com/devanshbatham/CertEagle
 
 # XSS Finder
 git clone https://github.com/s0md3v/XSStrike
