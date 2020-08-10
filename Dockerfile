@@ -31,7 +31,7 @@ RUN apt-get install --no-install-recommends -y nikto sqlmap whatweb
 RUN apt-get install --no-install-recommends -y amass
 
 # Web enumeration
-RUN pip3 install gsan dnsgen
+RUN pip3 install gsan dnsgen shodan
 RUN apt-get install --no-install-recommends -y whois
 
 # Go tools
