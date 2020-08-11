@@ -1,4 +1,4 @@
-FROM kalilinux/kali-bleeding-edge
+FROM kalilinux/kali-rolling
 
 ARG USER=user
 ARG PASSWD=pwd
@@ -25,7 +25,7 @@ RUN apt-get install --no-install-recommends -y iputils-ping ncat nmap tshark
 RUN apt-get install --no-install-recommends -y cewl
 
 # Web tools
-RUN apt-get install --no-install-recommends -y nikto sqlmap whatweb
+RUN apt-get install --no-install-recommends -y chromium nikto sqlmap whatweb
 
 # Subdomain enumeration
 RUN apt-get install --no-install-recommends -y amass
@@ -42,6 +42,7 @@ RUN go get github.com/ffuf/ffuf \
            github.com/asciimoo/wuzz \
            github.com/IAmStoxe/urlgrab \
            github.com/haccer/subjack \
+           github.com/michenriksen/aquatone \
            github.com/projectdiscovery/nuclei/v2/cmd/nuclei \
            github.com/projectdiscovery/dnsprobe \
            github.com/projectdiscovery/httpx/cmd/httpx \
