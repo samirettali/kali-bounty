@@ -31,6 +31,7 @@ RUN apt-get install --no-install-recommends -y nikto sqlmap whatweb
 RUN apt-get install --no-install-recommends -y amass
 
 # Web enumeration
+RUN gem install XSpear
 RUN pip3 install gsan dnsgen shodan
 RUN apt-get install --no-install-recommends -y whois
 
@@ -40,6 +41,7 @@ RUN go get github.com/ffuf/ffuf \
            github.com/lc/gau \
            github.com/asciimoo/wuzz \
            github.com/IAmStoxe/urlgrab \
+           github.com/haccer/subjack \
            github.com/projectdiscovery/dnsprobe \
            github.com/projectdiscovery/httpx/cmd/httpx \
            github.com/projectdiscovery/chaos-client/cmd/chaos \
