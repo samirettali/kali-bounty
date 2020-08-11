@@ -42,6 +42,7 @@ RUN go get github.com/ffuf/ffuf \
            github.com/asciimoo/wuzz \
            github.com/IAmStoxe/urlgrab \
            github.com/haccer/subjack \
+           github.com/projectdiscovery/nuclei \
            github.com/projectdiscovery/dnsprobe \
            github.com/projectdiscovery/httpx/cmd/httpx \
            github.com/projectdiscovery/chaos-client/cmd/chaos \
