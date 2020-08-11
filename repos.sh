@@ -229,3 +229,18 @@ git clone https://github.com/arkadiyt/bounty-targets-data
 
 # Recon
 git clone https://github.com/yogeshojha/rengine
+
+# Parameter finder
+git clone https://github.com/devanshbatham/ParamSpider
+
+# Open redirect
+git clone https://github.com/devanshbatham/OpenRedireX
+
+# Alive URLs finder
+git clone https://github.com/devanshbatham/Drishti
+
+# WAF
+git clone https://github.com/EnableSecurity/wafw00f
+
+# Technology identification
+git clone https://github.com/devanshbatham/FavFreak
