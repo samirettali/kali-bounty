@@ -54,6 +54,7 @@ RUN go get github.com/ffuf/ffuf \
            github.com/tomnomnom/waybackurls \
            github.com/tomnomnom/hacks/kxss \
            github.com/tomnomnom/hacks/tok \
+           github.com/tomnomnom/hacks/ettu \
            github.com/tomnomnom/hacks/filter-resolved \
            github.com/tomnomnom/hacks/html-tool && \
     mv /root/go/bin/* /usr/local/bin
