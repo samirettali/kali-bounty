@@ -216,6 +216,9 @@ git clone https://github.com/s0md3v/XSStrike
 git clone https://github.com/swisskyrepo/SSRFmap
 git clone https://github.com/random-robbie/ssrf-finder
 
+# SQL injection
+git clone https://github.com/ghostlulzhacks/waybackSqliScanner
+
 # Misc
 git clone https://github.com/allyomalley/LiveTargetsFinder
 git clone https://github.com/Static-Flow/ParameterMiner
