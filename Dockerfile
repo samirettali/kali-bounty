@@ -32,7 +32,7 @@ RUN apt-get install --no-install-recommends -y amass
 
 # Web enumeration
 RUN gem install XSpear
-RUN pip3 install gsan dnsgen shodan
+RUN pip3 install gsan shodan
 RUN apt-get install --no-install-recommends -y whois
 
 # Go tools
@@ -72,6 +72,14 @@ RUN git clone https://github.com/infosec-au/altdns && \
         python3 setup.py install && \
         cd .. && \
         rm -rf altdns
+
+# Install dnsgen
+RUN git clone https://github.com/ProjectAnte/dnsgen && \
+        cd dnsgen && \
+        pip3 install -r requirements.txt && \
+        python3 setup.py install && \
+        cd .. && \
+        rm -rf dnsgen
 
 # Install massdns
 RUN git clone https://github.com/blechschmidt/massdns && \
