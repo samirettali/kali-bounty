@@ -42,12 +42,15 @@ RUN go get github.com/ffuf/ffuf \
            github.com/asciimoo/wuzz \
            github.com/IAmStoxe/urlgrab \
            github.com/haccer/subjack \
+           github.com/003random/getJS \
            github.com/michenriksen/aquatone \
+           github.com/Static-Flow/ParameterMiner/cmd/parameterMiner \
            github.com/projectdiscovery/nuclei/v2/cmd/nuclei \
            github.com/projectdiscovery/dnsprobe \
            github.com/projectdiscovery/httpx/cmd/httpx \
            github.com/projectdiscovery/chaos-client/cmd/chaos \
            github.com/projectdiscovery/subfinder/cmd/subfinder \
+           github.com/projectdiscovery/shuffledns/cmd/shuffledns \
            github.com/tomnomnom/assetfinder \
            github.com/tomnomnom/gf \
            github.com/tomnomnom/httprobe \
@@ -80,6 +83,14 @@ RUN git clone https://github.com/ProjectAnte/dnsgen && \
         python3 setup.py install && \
         cd .. && \
         rm -rf dnsgen
+
+# Install dnscewl
+RUN git clone github.com/codingo/DNSCewl && \
+        cd DNSCewl && \
+        make && \
+        mv DNSCewl /usr/local/bin/dnscewl && \
+        cd .. && \
+        rm -rf DNSCewl
 
 # Install massdns
 RUN git clone https://github.com/blechschmidt/massdns && \
