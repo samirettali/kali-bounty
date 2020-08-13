@@ -85,7 +85,7 @@ RUN git clone https://github.com/ProjectAnte/dnsgen && \
         rm -rf dnsgen
 
 # Install dnscewl
-RUN git clone github.com/codingo/DNSCewl && \
+RUN git clone https://github.com/codingo/DNSCewl && \
         cd DNSCewl && \
         make && \
         mv DNSCewl /usr/local/bin/dnscewl && \
