@@ -230,6 +230,7 @@ git clone https://github.com/projectdiscovery/nuclei-templates
 
 # Data
 git clone https://github.com/arkadiyt/bounty-targets-data
+git clone https://github.com/projectdiscovery/public-bugbounty-programs
 
 # Recon
 git clone https://github.com/yogeshojha/rengine
