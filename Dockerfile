@@ -56,6 +56,7 @@ RUN go get github.com/ffuf/ffuf \
            github.com/projectdiscovery/shuffledns/cmd/shuffledns \
            github.com/tomnomnom/assetfinder \
            github.com/tomnomnom/gf \
+           github.com/tomnomnom/meg \
            github.com/tomnomnom/httprobe \
            github.com/tomnomnom/unfurl \
            github.com/tomnomnom/waybackurls \
