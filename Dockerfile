@@ -43,6 +43,7 @@ RUN go get github.com/ffuf/ffuf \
            github.com/IAmStoxe/urlgrab \
            github.com/haccer/subjack \
            github.com/003random/getJS \
+           dw1.io/crlfuzz/cmd/crlfuzz \
            github.com/michenriksen/aquatone \
            github.com/Static-Flow/ParameterMiner/cmd/parameterMiner \
            github.com/projectdiscovery/nuclei/v2/cmd/nuclei \
@@ -56,6 +57,7 @@ RUN go get github.com/ffuf/ffuf \
            github.com/tomnomnom/httprobe \
            github.com/tomnomnom/unfurl \
            github.com/tomnomnom/waybackurls \
+           github.com/tomnomnom/qsreplace \
            github.com/tomnomnom/hacks/kxss \
            github.com/tomnomnom/hacks/tok \
            github.com/tomnomnom/hacks/ettu \
