@@ -44,6 +44,7 @@ RUN go get github.com/ffuf/ffuf \
            github.com/haccer/subjack \
            github.com/003random/getJS \
            dw1.io/crlfuzz/cmd/crlfuzz \
+           github.com/milindpurswani/whoxyrm \
            github.com/michenriksen/aquatone \
            github.com/Static-Flow/ParameterMiner/cmd/parameterMiner \
            github.com/projectdiscovery/nuclei/v2/cmd/nuclei \
@@ -143,8 +144,14 @@ USER $USER
 
 # Get gf's patterns
 RUN cd /home/${USER} && \
+        git clone https://github.com/tomnomnom/gf && \
+        mkdir -p /home/${USER}/.gf && \
+        mv gf/examples/*.json /home/${USER}/.gf && \
+        rm -rf gf
+
+RUN cd /home/${USER} && \
         git clone https://github.com/1ndianl33t/Gf-Patterns && \
-        mkdir /home/${USER}/.gf && \
+        mkdir -p /home/${USER}/.gf && \
         mv Gf-Patterns/*.json /home/${USER}/.gf && \
         rm -rf Gf-Patterns
 
