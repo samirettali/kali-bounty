@@ -46,6 +46,7 @@ RUN go get github.com/ffuf/ffuf \
            dw1.io/crlfuzz/cmd/crlfuzz \
            github.com/milindpurswani/whoxyrm \
            github.com/michenriksen/aquatone \
+           github.com/jaeles-project/jaeles \
            github.com/Static-Flow/ParameterMiner/cmd/parameterMiner \
            github.com/projectdiscovery/nuclei/v2/cmd/nuclei \
            github.com/projectdiscovery/dnsprobe \
@@ -154,6 +155,11 @@ RUN cd /home/${USER} && \
         mkdir -p /home/${USER}/.gf && \
         mv Gf-Patterns/*.json /home/${USER}/.gf && \
         rm -rf Gf-Patterns
+
+# Get jaeles' signatures
+RUN git clone --depth=1 https://github.com/jaeles-project/jaeles-signatures /tmp/jaeles-signatures/ && \
+        jaeles config -a reload --signDir /tmp/jaeles-signatures && \
+        rm -rf /tmp/jaeles-signatures
 
 # Install dotfiles
 RUN curl -Ls http://bit.do/samirminimaldotfiles | bash
