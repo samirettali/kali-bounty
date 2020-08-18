@@ -43,7 +43,7 @@ RUN go get github.com/ffuf/ffuf \
            github.com/IAmStoxe/urlgrab \
            github.com/haccer/subjack \
            github.com/003random/getJS \
-           github.com/dwisiswant0/crlfuzz \
+           github.com/dwisiswant0/crlfuzz/cmd/crlfuzz \
            github.com/milindpurswani/whoxyrm \
            github.com/michenriksen/aquatone \
            github.com/jaeles-project/jaeles \
