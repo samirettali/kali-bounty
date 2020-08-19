@@ -28,7 +28,7 @@ RUN apt-get install --no-install-recommends -y cewl
 RUN apt-get install --no-install-recommends -y chromium nikto sqlmap whatweb
 
 # Subdomain enumeration
-RUN apt-get install --no-install-recommends -y amass
+RUN apt-get install --no-install-recommends -y amass dnsrecon
 
 # Web enumeration
 RUN gem install XSpear
