@@ -40,7 +40,6 @@ RUN go get github.com/ffuf/ffuf \
            github.com/hakluke/hakrawler \
            github.com/lc/gau \
            github.com/asciimoo/wuzz \
-           github.com/IAmStoxe/urlgrab \
            github.com/haccer/subjack \
            github.com/003random/getJS \
            github.com/milindpurswani/whoxyrm \
