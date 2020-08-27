@@ -39,6 +39,7 @@ RUN apt-get install --no-install-recommends -y whois
 RUN GO111MODULE=on go get -u github.com/ffuf/ffuf \
            github.com/hakluke/hakrawler \
            github.com/lc/gau \
+           github.com/tillson/git-hound \
            github.com/asciimoo/wuzz \
            github.com/haccer/subjack \
            github.com/003random/getJS \
