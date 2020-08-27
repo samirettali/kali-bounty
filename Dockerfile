@@ -36,7 +36,7 @@ RUN pip3 install gsan shodan
 RUN apt-get install --no-install-recommends -y whois
 
 # Go tools
-RUN go get github.com/ffuf/ffuf \
+RUN GO111MODULE=on go get -u github.com/ffuf/ffuf \
            github.com/hakluke/hakrawler \
            github.com/lc/gau \
            github.com/asciimoo/wuzz \
@@ -44,6 +44,8 @@ RUN go get github.com/ffuf/ffuf \
            github.com/003random/getJS \
            github.com/milindpurswani/whoxyrm \
            github.com/jaeles-project/jaeles \
+           github.com/iamstoxe/urlgrab \
+           dw1.io/crlfuzz/cmd/crlfuzz \
            github.com/Static-Flow/ParameterMiner/cmd/parameterMiner \
            github.com/projectdiscovery/nuclei/v2/cmd/nuclei \
            github.com/projectdiscovery/dnsprobe \
