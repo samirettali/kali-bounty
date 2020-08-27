@@ -131,8 +131,6 @@ git clone https://github.com/derv82/wifite2
 
 # OSINT
 git clone https://github.com/martinvigo/email2phonenumber
-git clone https://github.com/thelinuxchoice/userrecon
-git clone https://github.com/tr4cefl0w/userfinder
 git clone https://github.com/sherlock-project/sherlock
 
 # Web
@@ -223,6 +221,7 @@ git clone https://github.com/allyomalley/LiveTargetsFinder
 git clone https://github.com/Static-Flow/ParameterMiner
 git clone https://github.com/ShutdownRepo/telegram-bot-cli
 git clone https://github.com/m4ll0k/Bug-Bounty-Toolz
+git clone https://github.com/samirettali/flask-base
 git clone https://github.com/victoni/Bug-Bounty-Scripts
 git clone https://github.com/1ndianl33t/Gf-Patterns
 git clone https://github.com/projectdiscovery/nuclei-templates
@@ -236,6 +235,7 @@ git clone https://github.com/yogeshojha/rengine
 
 # Parameter finder
 git clone https://github.com/devanshbatham/ParamSpider
+git clone https://github.com/foulenzer/paraglider
 
 # Open redirect
 git clone https://github.com/devanshbatham/OpenRedireX
