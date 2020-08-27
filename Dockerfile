@@ -56,6 +56,7 @@ RUN go get github.com/ffuf/ffuf \
            github.com/tomnomnom/meg \
            github.com/tomnomnom/httprobe \
            github.com/tomnomnom/unfurl \
+           github.com/tomnomnom/anew \
            github.com/tomnomnom/waybackurls \
            github.com/tomnomnom/qsreplace \
            github.com/tomnomnom/hacks/kxss \
