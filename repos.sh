@@ -256,3 +256,4 @@ git clone https://github.com/VainlyStrain/Vailyn
 
 # Javascript debugging
 git clone https://github.com/BitTheByte/BitMapper
+git clone https://github.com/rarecoil/unwebpack-sourcemap
