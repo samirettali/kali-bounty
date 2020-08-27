@@ -212,6 +212,7 @@ git clone https://github.com/s0md3v/XSStrike
 # SSRF
 git clone https://github.com/swisskyrepo/SSRFmap
 git clone https://github.com/random-robbie/ssrf-finder
+git clone https://github.com/knassar702/lorsrf
 
 # SQL injection
 git clone https://github.com/ghostlulzhacks/waybackSqliScanner
@@ -249,3 +250,9 @@ git clone https://github.com/EnableSecurity/wafw00f
 
 # Technology identification
 git clone https://github.com/devanshbatham/FavFreak
+
+# Path traversal
+git clone https://github.com/VainlyStrain/Vailyn
+
+# Javascript debugging
+git clone https://github.com/BitTheByte/BitMapper
