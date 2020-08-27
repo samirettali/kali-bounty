@@ -221,6 +221,7 @@ git clone https://github.com/allyomalley/LiveTargetsFinder
 git clone https://github.com/Static-Flow/ParameterMiner
 git clone https://github.com/ShutdownRepo/telegram-bot-cli
 git clone https://github.com/m4ll0k/Bug-Bounty-Toolz
+git clone https://github.com/intrudir/403fuzzer
 git clone https://github.com/samirettali/flask-base
 git clone https://github.com/victoni/Bug-Bounty-Scripts
 git clone https://github.com/1ndianl33t/Gf-Patterns
