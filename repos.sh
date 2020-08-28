@@ -37,6 +37,7 @@ git clone https://github.com/DominicBreuker/stego-toolkit
 git clone https://github.com/EdOverflow/can-i-take-over-xyz
 git clone https://github.com/JohnHammond/ctf-katana
 git clone https://github.com/apsdehal/awesome-ctf
+git clone https://github.com/infoslack/awesome-web-hacking
 git clone https://github.com/enaqx/awesome-pentest
 git clone https://github.com/jivoi/pentest
 git clone https://github.com/lanjelot/ctfs
