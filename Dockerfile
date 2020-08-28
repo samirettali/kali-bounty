@@ -159,9 +159,10 @@ RUN cd /home/${USER} && \
         rm -rf Gf-Patterns
 
 # Get jaeles' signatures
-RUN git clone --depth=1 https://github.com/jaeles-project/jaeles-signatures /tmp/jaeles-signatures/ && \
-        jaeles config -a reload --signDir /tmp/jaeles-signatures && \
-        rm -rf /tmp/jaeles-signatures
+RUN cd /home/${USER} && \
+        git clone --depth=1 https://github.com/jaeles-project/jaeles-signatures && \
+        jaeles config -a reload --signDir jaeles-signatures && \
+        rm -rf jaeles-signatures
 
 # Install dotfiles
 RUN curl -Ls http://bit.do/samirminimaldotfiles | bash
