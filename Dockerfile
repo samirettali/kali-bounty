@@ -36,6 +36,9 @@ RUN gem install XSpear
 RUN pip3 install gsan shodan
 RUN apt-get install --no-install-recommends -y whois
 
+# Create link to Go executable
+RUN ln -s /usr/lib/go-1.15/bin/go /bin/go
+
 # Go tools
 RUN GO111MODULE=on go get -u github.com/ffuf/ffuf \
            github.com/hakluke/hakrawler \
@@ -139,9 +142,6 @@ RUN git clone https://github.com/devanshbatham/ParamSpider && \
 
 # Install surge to host static websites
 RUN npm install -global surge
-
-# Create link to Go executable
-RUN ln -s /usr/lib/go-1.15/bin/go /bin/go
 
 # User creation
 RUN useradd -m ${USER} && \
