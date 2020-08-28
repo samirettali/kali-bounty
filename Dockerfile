@@ -13,7 +13,7 @@ RUN apt-get install --no-install-recommends -y \
 
 # Development tools
 RUN apt-get install --no-install-recommends -y \
-    build-essential golang php-cli python3-dev ruby-dev
+    build-essential golang php-cli python3-dev ruby-dev nodejs npm
 
 # Bruteforcing
 RUN apt-get install --no-install-recommends -y hydra
@@ -135,6 +135,9 @@ RUN git clone https://github.com/devanshbatham/ParamSpider && \
         pip3 install -r requirements.txt && \
         cd .. && \
         rm -rf ParamSpider
+
+# Install surge to host static websites
+RUN npm install -global surge
 
 # User creation
 RUN useradd -m ${USER} && \
