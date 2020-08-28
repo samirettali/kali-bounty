@@ -27,6 +27,7 @@ git clone https://github.com/thelikes/fuzzmost
 git clone https://github.com/assetnote/commonspeak2-wordlists
 git clone https://github.com/Droidzzzio/EnumerationList
 git clone https://github.com/chrislockard/api_wordlist
+git clone https://github.com/koaj/ffw-content-discovery
 git clone https://github.com/ZephrFish/Wordlists bounty-wordlists
 wget https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt
 wget https://crackstation.net/files/crackstation-human-only.txt.gz
@@ -43,6 +44,7 @@ git clone https://github.com/sehno/Bug-bounty
 git clone https://github.com/trimstray/the-book-of-secret-knowledge
 git clone https://github.com/streaak/keyhacks
 git clone https://github.com/EdOverflow/bugbounty-cheatsheet
+git clone https://github.com/mathiasbynens/small
 git clone https://github.com/vitalysim/Awesome-Hacking-Resources
 git clone https://github.com/zardus/ctf-tools
 git clone https://github.com/terjanq/Tiny-XSS-Payloads
