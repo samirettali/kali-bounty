@@ -227,6 +227,7 @@ git clone https://github.com/samirettali/flask-base
 git clone https://github.com/victoni/Bug-Bounty-Scripts
 git clone https://github.com/1ndianl33t/Gf-Patterns
 git clone https://github.com/projectdiscovery/nuclei-templates
+git clone https://github.com/aufzayed/digit
 
 # Data
 git clone https://github.com/arkadiyt/bounty-targets-data
@@ -257,3 +258,6 @@ git clone https://github.com/VainlyStrain/Vailyn
 # Javascript debugging
 git clone https://github.com/BitTheByte/BitMapper
 git clone https://github.com/rarecoil/unwebpack-sourcemap
+
+# Dorks
+git clone https://github.com/opsdisk/pagodo
