@@ -241,6 +241,7 @@ git clone https://github.com/yogeshojha/rengine
 # Parameter finder
 git clone https://github.com/devanshbatham/ParamSpider
 git clone https://github.com/foulenzer/paraglider
+git clone https://github.com/s0md3v/Parth
 
 # Open redirect
 git clone https://github.com/devanshbatham/OpenRedireX
