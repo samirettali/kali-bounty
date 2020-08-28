@@ -45,7 +45,7 @@ RUN GO111MODULE=on go get -u github.com/ffuf/ffuf \
            github.com/003random/getJS \
            github.com/milindpurswani/whoxyrm \
            github.com/jaeles-project/jaeles \
-           github.com/iamstoxe/urlgrab \
+           github.com/samirettali/urlgrab \
            dw1.io/crlfuzz/cmd/crlfuzz \
            github.com/Static-Flow/ParameterMiner/cmd/parameterMiner \
            github.com/projectdiscovery/nuclei/v2/cmd/nuclei \
