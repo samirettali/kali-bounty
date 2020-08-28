@@ -94,7 +94,7 @@ RUN git clone https://github.com/ProjectAnte/dnsgen && \
 RUN git clone https://github.com/codingo/DNSCewl && \
         cd DNSCewl && \
         make && \
-        mv DNSCewl /usr/local/bin/dnscewl && \
+        mv DNScewl /usr/local/bin/dnscewl && \
         cd .. && \
         rm -rf DNSCewl
 
