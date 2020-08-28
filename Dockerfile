@@ -4,6 +4,7 @@ ARG USER=user
 ARG PASSWD=pwd
 ENV DEBIAN_FRONTEND noninteractive
 
+# Update repositories and upgrade software
 RUN apt-get update && apt-get upgrade -y
 
 # Base tools
@@ -13,7 +14,7 @@ RUN apt-get install --no-install-recommends -y \
 
 # Development tools
 RUN apt-get install --no-install-recommends -y \
-    build-essential golang php-cli python3-dev ruby-dev nodejs npm
+    build-essential golang-1.15 php-cli python3-dev ruby-dev nodejs npm
 
 # Bruteforcing
 RUN apt-get install --no-install-recommends -y hydra
@@ -138,6 +139,9 @@ RUN git clone https://github.com/devanshbatham/ParamSpider && \
 
 # Install surge to host static websites
 RUN npm install -global surge
+
+# Create link to Go executable
+RUN ln -s /usr/lib/go-1.15/bin/go /bin/go
 
 # User creation
 RUN useradd -m ${USER} && \
