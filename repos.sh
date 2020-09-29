@@ -48,6 +48,7 @@ git clone https://github.com/EdOverflow/bugbounty-cheatsheet
 git clone https://github.com/mathiasbynens/small
 git clone https://github.com/vitalysim/Awesome-Hacking-Resources
 git clone https://github.com/zardus/ctf-tools
+git clone https://github.com/hackerscrolls/SecurityTips
 git clone https://github.com/terjanq/Tiny-XSS-Payloads
 git clone https://github.com/jdonsec/AllThingsSSRF
 git clone https://github.com/Ignitetechnologies/Privilege-Escalation
