@@ -136,6 +136,7 @@ git clone https://github.com/derv82/wifite2
 # OSINT
 git clone https://github.com/martinvigo/email2phonenumber
 git clone https://github.com/sherlock-project/sherlock
+git clone https://github.com/mxrch/GHunt
 
 # Web
 git clone https://github.com/D35m0nd142/LFISuite
