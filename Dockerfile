@@ -59,6 +59,7 @@ RUN GO111MODULE=on go get -u github.com/ffuf/ffuf \
            github.com/projectdiscovery/chaos-client/cmd/chaos \
            github.com/projectdiscovery/subfinder/cmd/subfinder \
            github.com/projectdiscovery/shuffledns/cmd/shuffledns \
+           github.com/dwisiswant0/unew \
            github.com/tomnomnom/assetfinder \
            github.com/tomnomnom/gf \
            github.com/tomnomnom/meg \
