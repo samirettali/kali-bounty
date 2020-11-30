@@ -9,8 +9,9 @@ RUN apt-get update && apt-get upgrade -y
 
 # Base tools
 RUN apt-get install --no-install-recommends -y \
-    ack curl dnsutils dos2unix entr fd-find file fzf git hexedit jq less man \
-    moreutils openssh-client python3 python3-pip sudo tmux tree vim watch wget
+    ack awscli curl dnsutils dos2unix entr fd-find file fzf git hexedit jq \
+    less man moreutils openssh-client python3 python3-pip sudo tmux tree vim \
+    watch wget
 
 # Development tools
 RUN apt-get install --no-install-recommends -y \
@@ -54,11 +55,12 @@ RUN GO111MODULE=on go get -u github.com/ffuf/ffuf \
            dw1.io/crlfuzz/cmd/crlfuzz \
            github.com/Static-Flow/ParameterMiner/cmd/parameterMiner \
            github.com/projectdiscovery/nuclei/v2/cmd/nuclei \
-           github.com/projectdiscovery/dnsprobe \
            github.com/projectdiscovery/httpx/cmd/httpx \
            github.com/projectdiscovery/chaos-client/cmd/chaos \
            github.com/projectdiscovery/subfinder/cmd/subfinder \
            github.com/projectdiscovery/shuffledns/cmd/shuffledns \
+           github.com/projectdiscovery/dnsx/cmd/dnsx \
+           github.com/projectdiscovery/mapcidr/cmd/mapcidr \
            github.com/dwisiswant0/unew \
            github.com/tomnomnom/assetfinder \
            github.com/tomnomnom/gf \

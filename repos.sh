@@ -31,6 +31,7 @@ git clone https://github.com/koaj/ffw-content-discovery
 git clone https://github.com/ZephrFish/Wordlists bounty-wordlists
 wget https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt
 wget https://crackstation.net/files/crackstation-human-only.txt.gz
+aws s3 sync s3://assetnote-wordlists/data/ ./assetnote-wordlists --no-sign-request
 
 cd ../resources
 git clone https://github.com/DominicBreuker/stego-toolkit
